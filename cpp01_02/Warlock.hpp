@@ -10,6 +10,7 @@ class Warlock {
     private:
         std::string _name;
         std::string _title;
+        ASpell      *_learnt_spell;
 
     public:
         Warlock(std::string name, std::string title);

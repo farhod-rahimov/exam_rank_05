@@ -4,7 +4,9 @@ Fwoosh::Fwoosh() : ASpell("Fwoosh", "fwooshed") {};
 
 Fwoosh::~Fwoosh() {};
 
-Fwoosh::Fwoosh(Fwoosh const & src) : ASpell("Fwoosh", "fwooshed") {};
+Fwoosh::Fwoosh(Fwoosh const & src) : ASpell("Fwoosh", "fwooshed") {
+    (void)src;
+};
 
 Fwoosh & Fwoosh::operator = (Fwoosh const & src) {
     if (this != &src) {
